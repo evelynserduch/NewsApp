@@ -17,9 +17,7 @@ class MyViewModel() : ViewModel() {
                 extras: CreationExtras
             ): T {
 
-                return MyViewModel(
-
-                ) as T
+                return MyViewModel() as T
             }
         }
     }
