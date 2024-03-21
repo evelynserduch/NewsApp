@@ -13,3 +13,17 @@
 .externalNativeBuild
 .cxx
 local.properties
++/build
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+.idea
+build/
+.navigation
+captures/
+output.json
+obj/

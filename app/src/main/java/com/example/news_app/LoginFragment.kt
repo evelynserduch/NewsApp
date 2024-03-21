@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -12,10 +11,10 @@ import com.example.news_app.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
-    private var _binding: FragmentLoginBinding? = null
     private val binding: FragmentLoginBinding
         get() = requireNotNull(_binding)
-    private val viewModel: MyViewModel by viewModels {MyViewModel.Factory}
+    private val viewModel: LoginViewModel by viewModels { LoginViewModel.Factory }
+    private var _binding: FragmentLoginBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,10 +27,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.loginBtn.setOnClickListener{
+        binding.loginBtn.setOnClickListener {
             findNavController().navigate(R.id.registrationFragment, null)
         }
-        }
+    }
 
 
 }
