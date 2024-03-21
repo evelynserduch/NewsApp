@@ -3,4 +3,8 @@
     <string name="RegistrationFragment">RegistrationFragment</string>
     <string name="LoginFragment">LoginFragment</string>
     <string name="LoginButton">Регистрация</string>
+    <string name="LoginButton2">Войти</string>
+    <string name="autorization">Авторизация</string>
+    <string name="enter_email">Введите e-mail</string>
+    <string name="enter_password">Введите пароль</string>
 </resources>
